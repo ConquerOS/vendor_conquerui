@@ -32,6 +32,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
     ro.com.google.ime.theme_id=5
 
+# Fonts overlay
+PRODUCT_PACKAGES += \
+    FontInterOverlay \
+    FontGoogleSansOverlay
+	
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -45,7 +50,7 @@ PRODUCT_PACKAGES += \
 # Pixel Customization
 PRODUCT_PACKAGES += \
     ThemePicker \
-	 PixelThemesStub2019
+    PixelThemesStub2019
 	
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
