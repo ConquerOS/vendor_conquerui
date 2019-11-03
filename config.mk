@@ -14,6 +14,19 @@
 
 LOCAL_PATH := vendor/conquerui
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    NexusLauncherRelease \
+    NexusWallpapersStubPrebuilt2019 \
+    PixelThemesStub2019 \
+    SafetyHubPrebuilt \
+    SettingsIntelligenceGooglePrebuilt
+
+ifeq ($(TARGET_GAPPS_ARCH),arm64)
+PRODUCT_PACKAGES += \
+    MatchmakerPrebuiltPixel4
+endif
+
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
@@ -36,7 +49,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     FontInterOverlay \
     FontGoogleSansOverlay
-	
+
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -49,9 +62,8 @@ PRODUCT_PACKAGES += \
 
 # Pixel Customization
 PRODUCT_PACKAGES += \
-    ThemePicker \
-    PixelThemesStub2019
-	
+    ThemePicker
+
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
