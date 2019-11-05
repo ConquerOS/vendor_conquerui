@@ -20,7 +20,13 @@ PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019 \
     PixelThemesStub2019 \
     SafetyHubPrebuilt \
+<<<<<<< HEAD
     SettingsIntelligenceGooglePrebuilt
+=======
+    SettingsIntelligenceGooglePrebuilt \
+    GooglePermissionControllerOverlay \
+    PixelDocumentsUIGoogleOverlay
+>>>>>>> 5a54460... pixelstyle: Update NexusWallpapersStubPrebuilt2019 and push GooglePermissionControllerOverlay
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
