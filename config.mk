@@ -36,3 +36,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay/common/
+
+# Include PixeLauncher
+ifeq ($(INCLUDE_PIXELLAUNCHER),true)
+$(warning "ConquerUI: PixelLauncher include is true")
+PRODUCT_PACKAGES += \
+    PixeLauncher
+else
+$(warning "ConquerUI: PixelLauncher include is false")
+endif
