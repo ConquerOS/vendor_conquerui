@@ -39,11 +39,20 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Include PixeLauncher
 ifeq ($(INCLUDE_PIXELLAUNCHER),true)
-$(warning "ConquerUI: PixelLauncher include is true")
+$(warning "ConquerUI: PixelLauncher is included as default")
 PRODUCT_PACKAGES += \
     PixeLauncher
+\else
+$(warning "ConquerUI: PixelLauncher is not included as default")
+endif
+
+# Include PixeLauncher
+ifeq ($(INCLUDE_LAWNCHAIR),true)
+$(warning "ConquerUI: Lawnchair is included as default")
+PRODUCT_PACKAGES += \
+    Lawnchair
 else
-$(warning "ConquerUI: PixelLauncher include is false")
+$(warning "ConquerUI: Lawnchair is not included as default")
 endif
 
 # Bootanimation
@@ -65,3 +74,6 @@ else
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation-dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
 endif
+
+# Copy files
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)

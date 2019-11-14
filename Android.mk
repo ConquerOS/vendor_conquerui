@@ -14,14 +14,27 @@
 
 LOCAL_PATH := $(call my-dir)
 
-
+# PixelLauncher
 include $(CLEAR_VARS)
 LOCAL_MODULE := PixelLauncher
 LOCAL_SRC_FILES := priv-app/PixelLauncher/PixelLauncher.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep QuickStep
+LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep QuickStep Lawnchair
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)# Empty
+
+# Lawnchair
+include $(CLEAR_VARS)
+LOCAL_MODULE := Lawnchair
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := $(LOCAL_MODULE)/$(LOCAL_MODULE).apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep PixelLauncher
+LOCAL_DEX_PREOPT := false
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
