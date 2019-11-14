@@ -77,3 +77,4 @@ endif
 
 # Copy files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/includes/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
