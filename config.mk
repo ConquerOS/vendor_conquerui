@@ -37,23 +37,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay/common/
 
-# Include PixeLauncher
-ifeq ($(INCLUDE_PIXELLAUNCHER),true)
-$(warning "ConquerUI: PixelLauncher is included as default")
-PRODUCT_PACKAGES += \
-    PixeLauncher
-\else
-$(warning "ConquerUI: PixelLauncher is not included as default")
-endif
-
-# Include PixeLauncher
-ifeq ($(INCLUDE_LAWNCHAIR),true)
-$(warning "ConquerUI: Lawnchair is included as default")
+# Include Lawnchair
+$(warning "ConquerUI: Lawnchair is included as default launcher")
 PRODUCT_PACKAGES += \
     Lawnchair
-else
-$(warning "ConquerUI: Lawnchair is not included as default")
-endif
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
