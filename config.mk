@@ -42,6 +42,10 @@ $(warning "ConquerUI: Lawnchair is included as default launcher")
 PRODUCT_PACKAGES += \
     Lawnchair
 
+# Apps
+PRODUCT_PACKAGES += \
+    ThemePicker
+	
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += $(LOCAL_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
