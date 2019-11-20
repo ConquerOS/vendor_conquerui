@@ -16,8 +16,8 @@ LOCAL_PATH := $(call my-dir)
 
 # PixelLauncher
 include $(CLEAR_VARS)
-LOCAL_MODULE := PixelLauncher
-LOCAL_SRC_FILES := priv-app/PixelLauncher/PixelLauncher.apk
+LOCAL_MODULE := PixelLauncherPrebuilt
+LOCAL_SRC_FILES := priv-app/PixelLauncherPrebuilt/PixelLauncherPrebuilt.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Launcher2 Launcher3 Launcher3QuickStep QuickStep Lawnchair

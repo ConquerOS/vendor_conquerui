@@ -37,10 +37,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay/common/
 
-# Include Lawnchair
-$(warning "ConquerUI: Lawnchair is included as default launcher")
+# Include PixelLAuncher
+$(warning "ConquerUI: Pixel Launcher is set as default Launcher")
 PRODUCT_PACKAGES += \
-    Lawnchair
+    PixelLauncherPrebuilt
 
 # Apps
 PRODUCT_PACKAGES += \
