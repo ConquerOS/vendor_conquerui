@@ -63,7 +63,7 @@ LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := NexusWallpapersStubPrebuilt2019
+LOCAL_MODULE := NexusWallpapersStubPrebuilt2019Static
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
 LOCAL_CERTIFICATE := platform
