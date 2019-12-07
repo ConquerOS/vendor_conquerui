@@ -37,10 +37,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay/common/
 
-# Include PixelLAuncher
-$(warning "ConquerUI: Pixel Launcher is set as default Launcher")
+# Include OnePlus Launcher
+$(warning "ConquerUI: OnePlus Launcher is set as default Launcher")
 PRODUCT_PACKAGES += \
-    PixelLauncherPrebuilt
+    OPLauncher
 
 # Pixel Customization
 PRODUCT_PACKAGES += \
