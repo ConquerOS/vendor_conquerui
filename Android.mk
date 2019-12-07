@@ -42,7 +42,7 @@ include $(BUILD_PREBUILT)
 # PixelThemes
 include $(CLEAR_VARS)
 LOCAL_MODULE := PixelThemesStub2019
-LOCAL_SRC_FILES := app/PixelThemesStub2019/PixelThemesStub2019apk
+LOCAL_SRC_FILES := app/PixelThemesStub2019/PixelThemesStub2019.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
