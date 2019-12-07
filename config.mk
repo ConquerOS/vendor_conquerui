@@ -42,9 +42,10 @@ $(warning "ConquerUI: Pixel Launcher is set as default Launcher")
 PRODUCT_PACKAGES += \
     PixelLauncherPrebuilt
 
-# Apps
+# Pixel Customization
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+	 PixelThemesStub2019
 	
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
