@@ -29,6 +29,6 @@
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
     <!-- Pixel QuickStep -->
-    <string name="config_recentsComponentName">net.oneplus.launcher/com.android.quickstep.RecentsActivity</string>
+    <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
     
 </resources>
