@@ -16,17 +16,9 @@ LOCAL_PATH := vendor/conquerui
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
     PixelThemesStub2019 \
-    SafetyHubPrebuilt \
-<<<<<<< HEAD
-    SettingsIntelligenceGooglePrebuilt
-=======
-    SettingsIntelligenceGooglePrebuilt \
-    GooglePermissionControllerOverlay \
-    PixelDocumentsUIGoogleOverlay
->>>>>>> 5a54460... pixelstyle: Update NexusWallpapersStubPrebuilt2019 and push GooglePermissionControllerOverlay
+    GooglePermissionControllerOverlay
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
