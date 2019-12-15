@@ -47,11 +47,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
     ro.com.google.ime.theme_id=5
 
-# Fonts overlay
-PRODUCT_PACKAGES += \
-    FontInterOverlay \
-    FontGoogleSansOverlay
-
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -88,4 +83,3 @@ endif
 
 # Copy files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/includes/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
