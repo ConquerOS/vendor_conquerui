@@ -57,7 +57,7 @@ $(warning "ConquerUI: OnePlus Launcher is set as default Launcher")
 PRODUCT_PACKAGES += \
     OPLauncher
 
-$ Pixel Customization
+# Pixel Customization
 PRODUCT_PACKAGES += \
     ThemePicker
 
