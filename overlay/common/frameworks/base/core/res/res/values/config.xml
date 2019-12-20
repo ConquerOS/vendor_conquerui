@@ -28,7 +28,4 @@
     <dimen name="config_buttonCornerRadius">16.0dip</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
-    <!-- OnePlus QuickStep -->
-    <string name="config_recentsComponentName">net.oneplus.launcher/com.android.quickstep.RecentsActivity</string>
-    
 </resources>
