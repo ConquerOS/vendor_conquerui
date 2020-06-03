@@ -17,7 +17,8 @@ LOCAL_PATH := vendor/conquerui
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019Static \
-    PixelThemesStub2019
+    PixelThemesStub2019 \
+    WallpaperPickerGoogleRelease
 
 # Offline charger
 PRODUCT_PACKAGES += \
@@ -81,3 +82,6 @@ endif
 
 # ConquerUI Sounds
 include vendor/conquerui/sounds/config.mk
+
+# Copy files
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
