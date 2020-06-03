@@ -17,7 +17,8 @@ LOCAL_PATH := vendor/conquerui
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019Static \
-    PixelThemesStub2019
+    PixelThemesStub2019 \
+    NexusLauncherRelease
 
 # Offline charger
 PRODUCT_PACKAGES += \
