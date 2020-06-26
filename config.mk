@@ -17,13 +17,7 @@ LOCAL_PATH := vendor/conquerui
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019Static \
-    PixelThemesStub2019 \
-    GooglePermissionControllerOverlay
-
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-PRODUCT_PACKAGES += \
-    MatchmakerPrebuiltPixel4
-endif
+    PixelThemesStub2019
 
 # Offline charger
 PRODUCT_PACKAGES += \
