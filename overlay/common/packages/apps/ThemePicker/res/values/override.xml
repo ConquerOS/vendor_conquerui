@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <string name="themes_stub_package" translatable="false">com.komodo.overlaystub</string>
+    <string name="themes_stub_package" translatable="false">com.google.android.apps.customization.pixel</string>
 
     <!-- List of packages whose icons are used to preview the icon shape for a theme. -->
     <array name="icon_shape_preview_packages">
