@@ -79,7 +79,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
     GesturalNavigationOverlayMedium \
-    GesturalNavigationOverlayHidden
+    GesturalNavigationOverlayHidden \
+    ImmersiveNavigationOverlay
 
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
